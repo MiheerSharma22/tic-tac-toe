@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    /* background-image: url(./gradient-bg.jpg); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.playerInfo {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem 2.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+.gameContainer {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem;
+    width: 80%;
+    max-width: 20rem;
+    border-radius: 1rem;
+}
+
+.box {
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: grid;
+    place-items: center;
+    cursor:pointer;
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+.box1 ,
+.box2 , 
+.box4 ,
+.box5 {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3 , 
+.box6 {
+    border-bottom: 2px solid white;
+}
+
+.box7 ,
+.box8 {
+    border-right: 2px solid white;
+}
+
+.newGame {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 1rem;
+    cursor:pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transform: scale(0);
+}
+
+.active {
+    transform: scale(1);
+}
+
+.winnersBoxes {
+    background-color: rgba(6, 226, 6, 0.363);
+}
